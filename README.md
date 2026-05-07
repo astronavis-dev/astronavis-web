@@ -1,6 +1,6 @@
-# Astronavis Web
+# Astronavis™ Web
 
-Official website and landing page for Astronavis.
+Official website and landing page for Astronavis™.
 
 ## Tech Stack
 
@@ -19,7 +19,7 @@ at your option.
 
 ### Branding Notice
 
-Astronavis branding assets, logos, icons and wallpapers are not covered by the open-source licenses and remain proprietary.
+Astronavis™ branding assets, logos, icons and wallpapers are not covered by the open-source licenses and remain proprietary.
 
 ## Status
 
