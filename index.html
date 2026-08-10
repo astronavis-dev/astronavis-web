@@ -120,59 +120,211 @@
 <header class="topbar">
     <div class="brand-small">ASTRONAVIS</div>
 
-    <nav>
+    <nav aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#explore">Explore</a>
         <a href="https://github.com/astronavis-dev">GitHub</a>
         <a href="mailto:hello@astronavis.io">Contact</a>
     </nav>
 </header>
 
-<main class="hero">
+<main>
 
-    <section class="hero-logo">
-        <img
-                src="assets/logo/stella.png"
-                alt="Astronavis galactic navigation emblem"
-        >
+    <section class="hero" aria-labelledby="astronavis-title">
+
+        <div class="hero-logo">
+            <img
+                    src="assets/logo/stella.png"
+                    alt="Astronavis galactic navigation emblem"
+            >
+        </div>
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                GALACTIC CARTOGRAPHY & NAVIGATION
+            </p>
+
+            <h1 id="astronavis-title">
+                ASTRONAVIS
+            </h1>
+
+            <div class="divider" aria-hidden="true"></div>
+
+            <p class="tagline">
+                Navigate with precision
+            </p>
+
+            <p class="subtitle">
+                A new stellar navigation experience is taking shape beyond the known routes.
+            </p>
+
+            <p class="coming-soon">
+                We'll guide you... very soon.
+            </p>
+
+            <div class="actions">
+                <a class="btn btn-primary" href="mailto:hello@astronavis.io">
+                    CONTACT US
+                </a>
+
+                <a class="btn btn-secondary" href="https://github.com/astronavis-dev">
+                    GITHUB
+                </a>
+            </div>
+
+        </div>
+
     </section>
 
-    <section class="hero-content">
 
-        <p class="eyebrow">
-            GALACTIC CARTOGRAPHY & NAVIGATION
-        </p>
+    <section id="about" class="content-section">
 
-        <h1>
-            ASTRONAVIS
-        </h1>
+        <div class="section-heading">
 
-        <div class="divider"></div>
+            <p class="section-kicker">
+                THE PROJECT
+            </p>
 
-        <p class="tagline">
-            Navigate with precision
-        </p>
+            <h2>
+                A navigation layer for a galaxy of worlds.
+            </h2>
 
-        <p class="subtitle">
-            A new stellar navigation experience is taking shape beyond the known routes.
-        </p>
+            <p class="section-intro">
+                Astronavis is an independent open-source platform for galactic
+                cartography and stellar navigation, designed to organize worlds,
+                sectors, coordinates and routes into a coherent exploration
+                experience.
+            </p>
 
-        <p class="coming-soon">
-            We'll guide you... very soon.
-        </p>
+            <p class="section-intro">
+                Built as an unofficial project inspired by the Star Wars galaxy,
+                Astronavis brings together stellar mapping, route intelligence
+                and navigation systems in a single evolving platform.
+            </p>
 
-        <div class="actions">
-            <a class="btn btn-primary" href="mailto:hello@astronavis.io">
-                CONTACT US
-            </a>
+        </div>
 
-            <a class="btn btn-secondary" href="https://github.com/astronavis-dev">
-                GITHUB
-            </a>
+    </section>
+
+
+    <section id="explore" class="content-section content-section-features">
+
+        <div class="section-heading">
+
+            <p class="section-kicker">
+                EXPLORE
+            </p>
+
+            <h2>
+                Cartography beyond known routes.
+            </h2>
+
+        </div>
+
+        <div class="feature-grid">
+
+            <article class="feature-card">
+
+                <span class="feature-icon" aria-hidden="true">
+                    <i class="fa-solid fa-map"></i>
+                </span>
+
+                <h3>
+                    Galactic Cartography
+                </h3>
+
+                <p>
+                    Astronavis is being built to represent planets, stellar
+                    locations, sectors and coordinates as an interconnected
+                    galactic map.
+                </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <span class="feature-icon" aria-hidden="true">
+                    <i class="fa-solid fa-route"></i>
+                </span>
+
+                <h3>
+                    Route Intelligence
+                </h3>
+
+                <p>
+                    Navigation is more than locating a world. Astronavis aims
+                    to model routes and connections between destinations to
+                    support meaningful exploration across the galaxy.
+                </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <span class="feature-icon" aria-hidden="true">
+                    <i class="fa-solid fa-code-branch"></i>
+                </span>
+
+                <h3>
+                    Open Source
+                </h3>
+
+                <p>
+                    The Astronavis platform is developed in the open, with its
+                    source code and technical evolution available through the
+                    Astronavis GitHub organization.
+                </p>
+
+                <a
+                        class="feature-link"
+                        href="https://github.com/astronavis-dev"
+                >
+                    Explore the project
+                    <span aria-hidden="true">→</span>
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <section class="content-section project-status">
+
+        <div class="status-panel">
+
+            <p class="section-kicker">
+                UNDER DEVELOPMENT
+            </p>
+
+            <h2>
+                The journey has just begun.
+            </h2>
+
+            <p>
+                Astronavis is actively evolving. New cartographic,
+                navigation and exploration capabilities are being designed
+                as the platform takes shape.
+            </p>
+
+            <div class="actions">
+                <a
+                        class="btn btn-secondary"
+                        href="https://github.com/astronavis-dev"
+                >
+                    FOLLOW DEVELOPMENT
+                </a>
+            </div>
+
         </div>
 
     </section>
 
 </main>
-
 <footer>
     © 2026 Astronavis™ · hello@astronavis.io
 </footer>
