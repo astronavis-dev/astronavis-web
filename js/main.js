@@ -1,30 +1,40 @@
 const backToTopButton = document.getElementById("back-to-top");
 const privacyButton = document.getElementById("privacy-settings");
-
 const hero = document.querySelector(".hero");
 
 const updateBackToTopVisibility = () => {
-    const heroBottom = hero.offsetTop + hero.offsetHeight;
+    const isAtTop = window.scrollY <= 16;
+    const heroAlmostGone = hero.getBoundingClientRect().bottom <= 120;
 
-    if (window.scrollY >= heroBottom - 120) {
-        backToTopButton.classList.add("is-visible");
-    } else {
-        backToTopButton.classList.remove("is-visible");
-    }
+    backToTopButton.classList.toggle(
+        "is-visible",
+        !isAtTop && heroAlmostGone
+    );
 };
 
-window.addEventListener("scroll", updateBackToTopVisibility);
+window.addEventListener(
+    "scroll",
+    updateBackToTopVisibility,
+    { passive: true }
+);
+
 window.addEventListener("resize", updateBackToTopVisibility);
 
 updateBackToTopVisibility();
 
 backToTopButton.addEventListener("click", () => {
+    backToTopButton.classList.remove("is-visible");
+
     window.scrollTo({
         top: 0,
         behavior: "smooth",
     });
 
-    history.replaceState(null, "", window.location.pathname);
+    history.replaceState(
+        null,
+        "",
+        window.location.pathname + window.location.search
+    );
 });
 
 privacyButton.addEventListener("click", () => {
