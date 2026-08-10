@@ -1,121 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>Astronavis</title>
+    <title>Astronavis — Galactic Cartography & Navigation</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta
+            name="description"
+            content="Astronavis is an independent open-source project for galactic cartography, stellar navigation and exploration of the Star Wars galaxy."
+    />
 
-  <!-- Elegant geometric font closer to the original concept -->
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-  />
+    <meta name="robots" content="index, follow, max-image-preview:large"/>
+    <meta name="theme-color" content="#020b16"/>
 
-  <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7.22/klaro.min.css">
+    <link rel="canonical" href="https://astronavis.io/"/>
 
-  <script defer src="js/klaro-config.js"></script>
-  <script defer src="https://cdn.kiprotect.com/klaro/v0.7.22/klaro.js"></script>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Astronavis"/>
+    <meta
+            property="og:title"
+            content="Astronavis — Galactic Cartography & Navigation"
+    />
+    <meta
+            property="og:description"
+            content="An independent open-source project for galactic cartography, stellar navigation and exploration of the Star Wars galaxy."
+    />
+    <meta property="og:url" content="https://astronavis.io/"/>
+    <meta
+            property="og:image"
+            content="https://astronavis.io/assets/wallpapers/wallpaper.png"
+    />
+    <meta
+            property="og:image:alt"
+            content="Astronavis galactic cartography and navigation"
+    />
 
-  <!-- Matomo -->
-  <script>
-    var _paq = window._paq = window._paq || [];
-    _paq.push(['requireConsent']);
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
+    <!-- X / Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta
+            name="twitter:title"
+            content="Astronavis — Galactic Cartography & Navigation"
+    />
+    <meta
+            name="twitter:description"
+            content="An independent open-source project for galactic cartography, stellar navigation and exploration of the Star Wars galaxy."
+    />
+    <meta
+            name="twitter:image"
+            content="https://astronavis.io/assets/wallpapers/wallpaper.png"
+    />
+    <meta
+            name="twitter:image:alt"
+            content="Astronavis galactic cartography and navigation"
+    />
 
-    (function() {
-      var u = "https://stats.umpire274.eu/";
-      _paq.push(['setTrackerUrl', u + 'matomo.php']);
-      _paq.push(['setSiteId', '6']);
+    <!-- Structured data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "WebSite",
+                    "@id": "https://astronavis.io/#website",
+                    "url": "https://astronavis.io/",
+                    "name": "Astronavis",
+                    "description": "Astronavis is an independent open-source project for galactic cartography, stellar navigation and exploration of the Star Wars galaxy.",
+                    "inLanguage": "en",
+                    "publisher": {
+                        "@id": "https://astronavis.io/#organization"
+                    }
+                },
+                {
+                    "@type": "Organization",
+                    "@id": "https://astronavis.io/#organization",
+                    "name": "Astronavis",
+                    "url": "https://astronavis.io/",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://astronavis.io/assets/logo/stella.png"
+                    },
+                    "email": "hello@astronavis.io",
+                    "sameAs": [
+                        "https://github.com/astronavis-dev"
+                    ]
+                }
+            ]
+        }
+    </script>
 
-      var d = document;
-      var g = d.createElement('script');
-      var s = d.getElementsByTagName('script')[0];
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-      g.async = true;
-      g.src = u + 'matomo.js';
-      s.parentNode.insertBefore(g, s);
-    })();
-  </script>
-  <!-- End Matomo Code -->
-  
-  <link rel="stylesheet" href="css/styles.css">
+    <!-- Elegant geometric font closer to the original concept -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="https://cdn.kiprotect.com/klaro/v0.7.22/klaro.min.css">
+
+    <script defer src="js/klaro-config.js"></script>
+    <script defer src="https://cdn.kiprotect.com/klaro/v0.7.22/klaro.js"></script>
+
+    <!-- MyTracks -->
+    <script defer src="https://stats.astronavis.duckdns.org/script.js"
+            data-website-id="c17acbaf-4bb1-4a5b-beba-69c4ec5aa60c"></script>
+    <!-- End MyTracks Code -->
+
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-  <div class="background-overlay"></div>
+<div class="background-overlay"></div>
 
-  <header class="topbar">
+<header class="topbar">
     <div class="brand-small">ASTRONAVIS</div>
 
     <nav>
-      <a href="https://github.com/astronavis-dev">GitHub</a>
-      <a href="mailto:hello@astronavis.io">Contact</a>
+        <a href="https://github.com/astronavis-dev">GitHub</a>
+        <a href="mailto:hello@astronavis.io">Contact</a>
     </nav>
-  </header>
+</header>
 
-  <main class="hero">
+<main class="hero">
 
     <section class="hero-logo">
-      <img src="assets/logo/stella.png" alt="Astronavis emblem">
+        <img
+                src="assets/logo/stella.png"
+                alt="Astronavis galactic navigation emblem"
+        >
     </section>
 
     <section class="hero-content">
 
-      <p class="eyebrow">
-        GALACTIC CARTOGRAPHY & NAVIGATION
-      </p>
+        <p class="eyebrow">
+            GALACTIC CARTOGRAPHY & NAVIGATION
+        </p>
 
-      <h1>
-        ASTRONAVIS
-      </h1>
+        <h1>
+            ASTRONAVIS
+        </h1>
 
-      <div class="divider"></div>
+        <div class="divider"></div>
 
-      <p class="tagline">
-        Navigate with precision
-      </p>
+        <p class="tagline">
+            Navigate with precision
+        </p>
 
-      <p class="subtitle">
-        A new stellar navigation experience is taking shape beyond the known routes.
-      </p>
+        <p class="subtitle">
+            A new stellar navigation experience is taking shape beyond the known routes.
+        </p>
 
-      <p class="coming-soon">
-        We'll guide you... very soon.
-      </p>
+        <p class="coming-soon">
+            We'll guide you... very soon.
+        </p>
 
-      <div class="actions">
-        <a class="btn btn-primary" href="mailto:hello@astronavis.io">
-          CONTACT US
-        </a>
+        <div class="actions">
+            <a class="btn btn-primary" href="mailto:hello@astronavis.io">
+                CONTACT US
+            </a>
 
-        <a class="btn btn-secondary" href="https://github.com/astronavis-dev">
-          GITHUB
-        </a>
-      </div>
+            <a class="btn btn-secondary" href="https://github.com/astronavis-dev">
+                GITHUB
+            </a>
+        </div>
 
     </section>
 
-  </main>
+</main>
 
-  <footer>
+<footer>
     © 2026 Astronavis™ · hello@astronavis.io
-  </footer>
-  
-  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
+</footer>
 
-  <button id="privacy-settings" class="privacy-settings" aria-label="Privacy settings">
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<button id="privacy-settings" class="privacy-settings" aria-label="Privacy settings">
     <i class="fa-solid fa-shield-halved"></i>
-  </button>
-  
-  <script src="js/main.js"></script>
+</button>
+
+<script src="js/main.js"></script>
 </body>
 </html>
